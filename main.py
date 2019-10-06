@@ -17,7 +17,7 @@ ant = Ant(
 	s,
 	int(input("Enter the angle of ant (0 or 90 or 180 or 270): ")), 
 	field,
-	left_color='red'
+	left_color=input("Enter the color as word: ")
 )
 
 root= tk.Tk()
