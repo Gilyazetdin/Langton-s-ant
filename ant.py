@@ -58,14 +58,14 @@ class Ant(Cell):
         elif self.field.get[self.y][self.x].color == self.left_color:
             self.angle = 0 if self.angle - 90 == -90 else self.angle - 90 
             self.field.get[self.y][self.x].color = self.right_color
-
+        self.direction = directionFromAngle(self.angle)
         self.x += self.direction[0]
         if self.x == self.field.width:
             self.x = 0
         self.y += self.direction[1]
         if self.y == self.field.height:
             self.y = 0
-        self.direction = directionFromAngle(self.angle)
+        
 
     
             

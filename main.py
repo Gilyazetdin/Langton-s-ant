@@ -1,6 +1,9 @@
 import tkinter as tk
 import time
+import sys
 from ant import *
+
+
 
 s = int(input("Enter the size of each cell: "))
 
